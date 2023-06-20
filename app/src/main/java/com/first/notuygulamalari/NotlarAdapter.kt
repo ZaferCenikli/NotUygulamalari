@@ -43,7 +43,7 @@ class NotlarAdapter(var context: Context,var NotlarListe:List<Notlar>)
     }
 
     override fun onBindViewHolder(holder: CardTasarim, position: Int) {
-        val not =NotlarListe.get(position)
+         val not =NotlarListe.get(position)
 
         holder.textViewDers.text=not.not_ad
         holder.textViewNot1.text= not.not1.toString()
@@ -52,6 +52,7 @@ class NotlarAdapter(var context: Context,var NotlarListe:List<Notlar>)
 
             val intent=Intent(context,DetayActivity::class.java)
             intent.putExtra("nesne",not)
+            context.startActivity(intent)
 
 
         }

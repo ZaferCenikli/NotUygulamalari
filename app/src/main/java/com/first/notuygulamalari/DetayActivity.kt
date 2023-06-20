@@ -14,6 +14,11 @@ class DetayActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detay)
         toolbar3.title="Not Detay"
         setSupportActionBar(toolbar3)
+        val not=intent.getSerializableExtra("nesne") as Notlar
+
+        editTextTextPersonName4.setText(not.not_ad)
+        editTextTextPersonName5.setText((not.not1).toString())
+        editTextTextPersonName6.setText((not.not2).toString())
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
