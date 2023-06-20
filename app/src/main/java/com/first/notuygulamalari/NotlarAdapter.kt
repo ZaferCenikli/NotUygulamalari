@@ -23,7 +23,7 @@ class NotlarAdapter(var context: Context,var NotlarListe:List<Notlar>)
             notCard=tasarim.findViewById(R.id.notCard)
             textViewDers=tasarim.findViewById(R.id.textViewDers)
             textViewNot1=tasarim.findViewById(R.id.textViewNot1)
-            textViewNot2=tasarim.findViewById(R.id.textViewNot1)
+            textViewNot2=tasarim.findViewById(R.id.textViewNot2)
         }
 
 
